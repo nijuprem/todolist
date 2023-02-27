@@ -53,17 +53,18 @@ module.exports.createTodo = function (req, res) {
     })
 }
 
-module.exports.deleteTodo = function (req, res) {
-    del_id = req.query.id;
-    TodoLists.findByIdAndDelete(del_id, function (err) {
-        if (err) {
-            console.log('err')
-            return;
-        }
-    });
-    return res.redirect('/');
+module.exports.deleteTodo = function(req,res){ 
+    sp = req.query.id; // getting the id from ui
+    deleteId = sp.split(','); 
+    for(let i=0;i<deleteId.length;i++){ // looping over deleteId  to delete all the checked value
+        TodoLists.findByIdAndDelete(deleteId[i],function(err){
+            if(err){
+                console.log('err')
+                return;
+            }
+        })
+    }
+return res.redirect('/');
 }
-
-
 
 

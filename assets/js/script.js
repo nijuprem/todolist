@@ -4,24 +4,20 @@ $(document).ready(function(){
     let categorys = document.getElementsByClassName('catesec'); // getting all the class name category 
         for(let i=0;i<categorys.length;i++){ // looping in the  categorys to find the which category class belongs and implement according sesign check home.css to get the color of eact section
             if(categorys[i].innerHTML.trim()=='Work'){ 
-               categorys[i].classList.add(designcl[0])
-               categorys[i].classList.add('commonClass')
+               categorys[i].classList.add(designcl[0], 'commonClass')
             }
             else if(categorys[i].innerHTML.trim()=='Personal'){
-                categorys[i].classList.add(designcl[1])
-                categorys[i].classList.add('commonClass')
+                categorys[i].classList.add(designcl[1], 'commonClass')
             }else if(categorys[i].innerHTML.trim()=='School'){
-                categorys[i].classList.add(designcl[2])
-                categorys[i].classList.add('commonClass')
+                categorys[i].classList.add(designcl[2], 'commonClass')
             }else if(categorys[i].innerHTML.trim()=='Cleaning'){
-                categorys[i].classList.add(designcl[3])
-                categorys[i].classList.add('commonClass')
+                categorys[i].classList.add(designcl[3], 'commonClass')
             }else if(categorys[i].innerHTML.trim()=='Others'){
-                categorys[i].classList.add(designcl[4])
-                categorys[i].classList.add('commonClass')
+                categorys[i].classList.add(designcl[4], 'commonClass')
             }
         }
 });
+
 
 // this in responsible for making  making cross line when the idem is  checked for deleting
 function checkedOrNot(){ 
@@ -77,3 +73,10 @@ document.getElementById('deleteButton').addEventListener('click',function(){
 
     });
 })
+
+
+
+
+
+
+
