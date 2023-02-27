@@ -8,7 +8,8 @@ const router = express.Router(); // Only started route handler
 console.log('Router loaded')
 
 router.get('/', homeController.home); // 4. Fetches the route
-router.use('/user', require('./users')); //5. This requires user to link it to user pade
+router.post('/create_todo',homeController.createTodo) //controller for creating todo list
+router.post('/delete_todo',homeController.deleteTodo) // controller for deleting the todo list
 
 //2. Module exports are the instructions that tell Node. js which bits of code (functions, objects, strings, etc.) to export from a given file so that other files are allowed to access the exported code.
 module.exports = router;

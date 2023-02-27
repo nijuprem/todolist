@@ -1,0 +1,161 @@
+body{
+    background-color: grey;
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-body{
+    width: 40rem;
+    background-color: white;
+    padding: 2rem;
+    font-size: large;
+}
+
+.card-body h2, .buttons_div{
+    text-align: center;
+}
+
+.border_none{ 
+    border: none;
+}
+
+.input_class, .duedate, .duecategory{
+    height: 2.5rem;
+    width: -webkit-fill-available;
+    outline: none;
+    transition: 0.3s;
+}
+
+.selection{
+    display: flex;
+}
+
+.category_selection, .date_selection{
+    width: 50%;
+    padding-right: 2rem;
+}
+
+.button{
+    height: 50px;
+    width: 140px;
+    color: white;
+    transition: transform 0.3s;
+    font-size: medium;
+    margin-top: 1rem;
+}
+
+.colorRed{
+    background-color: #f53434;
+    transition: 0.4s;
+}
+
+.colorBlack{
+    background-color: rgb(29, 29, 29);
+    transition: 0.4s;
+}
+
+.colorRed:hover{
+    background-color: #910000;
+    cursor: pointer;
+}
+
+.colorBlack:hover{
+    background-color: rgb(63, 63, 63);
+    cursor: pointer;
+}
+
+.fa{
+    margin-right: 0.4rem;
+}
+
+.input_class:hover, .duedate:hover, .duecategory:hover{
+    background-color: rgba(228, 228, 228, 0.942);
+}
+
+/* Design for different category */
+.Work{
+    background-color:lightcoral;
+        
+}
+.Personal{
+    background-color: #58B7E8;
+
+}
+.School{
+    background-color: #F5D74A;
+}
+.Cleaning{
+    background-color: #88EB03;
+}
+.Others{
+    background-color: #BB5CF2;
+}
+/* .name_and_dueDate{
+    height: auto;
+    width: 200px;
+} */
+.dueD{
+    width: fit-content;
+}
+.color-white{
+    color: white;
+}
+
+label{
+    font-size: 20px;
+}
+
+.font_ad{
+    font-size: 17px;
+    color: rgb(121, 120, 120);
+}
+
+.singleTask{
+    border: 1px solid grey;
+    /* width: 50%; */
+    height: 90px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.6rem;
+}
+/* style for del check */
+.delechack{
+    margin: 15px;
+    border: 1px solid black;
+}
+/* style for category section */
+
+.catesec{
+    border: 1px solid black;
+    /* background-color: chartreuse; */
+    border-radius: 1rem;
+    padding: 1.3%;
+    font-weight: bold;
+    position: relative;
+    left: 52%;
+    width: 72px;
+    height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    left: 32rem;
+}
+
+
+.name_and_dueDate {
+    height: auto;
+    width: 200px;
+}
+
+.name_and_dueD p{
+    margin: 10px;
+    font-size: 18px;
+}
+
+.container{
+    margin-top: 1rem;
+}
